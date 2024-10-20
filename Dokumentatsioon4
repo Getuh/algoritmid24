@@ -1,0 +1,4 @@
+Teostab binaarset otsingut antud sorteeritud loendis.
+
+arr (list): Sorteeritud loend, kus otsitakse numbrit.
+otsitav (int): Otsitav number, mille indeksit soovitakse leida.
