@@ -1,0 +1,1 @@
+Ajaline keerukus: O(n), kuna ajalisest keerukusest oleneb sisseantud element, ehk ajaline keerukus muutub lineaarselt, kui n läheb suuremaks.
