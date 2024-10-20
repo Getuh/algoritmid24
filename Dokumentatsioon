@@ -1,0 +1,14 @@
+Puud on alati atsüklilised, mis tähendab, et neist ei saa moodustada tsükleid
+Atsüklilisus: Puud ei sisalda tsükleid ehk nad on alati hierarhilised.
+Igal puul on üks juht
+Puud võivad sisaldada erinevaid tasandeid
+Kui puul on n tippu, siis tal on alati n-1 serva.
+Puu näide:
+Organisatsioonistruktuurid kuna hierarhiline
+
+Graafid võivad olla tsüklilised või atsüklilised, ja nad ei pea olema hierarhilised.
+Graafid võivad sisaldada tsükleid
+Graafides võivad tipud olla omavahel seotud mitmeti.
+Graafid võivad olla suunatud
+Graafi näide: 
+Interneti veebilehed ja nende vahelised lingid
