@@ -1,0 +1,17 @@
+pseudokood for raamatute pikkus:3
+Teen algoritmi nii, et kõrgus oleks lühike -> pikk
+kasutan bubblesort!!!
+
+raamatud[]
+n = raamatute arv
+
+teha kuni sorteeritud:
+vahetus = false
+
+Korda i = 0 kuni N - 2: //N - 2 sest võrdleb eelviimase raamatuni
+Kui raamatu kõrgus i > raamatu kõrgus i + 1:
+	vaheta raamatu kõrgus i ja raamatu kõrgus i + 1
+	
+	vahetus = true //peab veel 1x läbi tegema, sest vaja kontrollida üle kõik 
+	
+Kui vahetusi pole on tsükkel läbi
