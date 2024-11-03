@@ -1,0 +1,39 @@
+[64, 34, 25, 12, 22, 11, 90]
+1. kord kui Bubblesort läbib:
+64 vahetub 34'ga sest 64>34
+64 vahetub 25'ga sest 64>25
+64 vahetub 12'ga
+64 vahetub 22'ga
+64 vahetub 11'ga
+64 ei vahetu 90'ga, sest 64<90
+Jaab [34,25,12,22,11,64,90]
+
+2. kord kui bubblesort läbib:
+34 vahetub 25'ga, sest 34>25
+34 vahetub 12'ga, sest 34>12
+34 vahetub 22'ga
+34 vahetub 11'ga
+34 ei vahetu 64'ga.
+Jaab [25,12,22,11,34,64,90]
+
+3. kord kui bubblesort läbib:
+25 ja 12 vahetub sest 25>12
+25 ja 22 vahetub sest 25>22
+25 ja 11 vahetub
+25 ja 34 ei vahetu
+Jaab [12,22,11,25,34,64,90]
+
+4. kord kui bubblesort läbib:
+12 ja 22 ei vahetu
+22 ja 11 vahetub 
+22 ja 25 ei vahetu
+Jaab [12,11,22,25,34,64,90]
+
+5. kord kui bubblesort läbib:
+12 ja 11 vahetub
+12 ja 22 ei vahetu
+Jaab [11,12,22,25,34,64,90]
+
+6. ja 7. läbimine
+Kõik on õiges järjekorras
+

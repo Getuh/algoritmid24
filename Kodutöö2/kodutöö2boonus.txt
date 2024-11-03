@@ -1,0 +1,3 @@
+Bubble Sort: [3, 5, 4, 7, 6, 2, 8]
+Selection Sort: [2, 3, 5, 4, 7, 6, 8]
+Insertion Sort: [3, 8, 5, 4, 7, 6, 2]

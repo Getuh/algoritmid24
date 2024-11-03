@@ -1,0 +1,3 @@
+a) Nii Bubble sortil, selection sortil kui ka insertion sortil võib halvimal juhul olla ajakompleksus O(n^2).
+b) Kõige sobivam sortimisalgoritm oleks quicksort, kuna selle ajakompleksus on O(n log n), mis tähendab
+et see on üks kiirematest sortimis algoritmidest suurte andmete jaoks.
