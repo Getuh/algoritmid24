@@ -1,3 +1,3 @@
-a) Stabiilne on siis, kui jätab võrdsete elementide omavahelise järjestuse samaks.
+a) Stabiilne on siis, kui jätab võrdsete elementide omavahelise järjestuse samaks. Näiteks bubblesort
 b) Adaptiivsus tähendab, et algoritm kasutab ära algandmete osalist sorteeritust, et 
 oleks kiirem sorteerimine ja väiksem töömaht. Näiteks Insertion sort ja bubble sort.
