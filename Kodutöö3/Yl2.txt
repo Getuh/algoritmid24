@@ -1,0 +1,10 @@
+Binary searchil on vajalik, et andmehulk oleks sorteeritud ning selle parim juhtum on
+O(1). Halvim on O(log n), mis on kiirem, kui Linear searchil. Samuti on keskmine juhtum
+kiirem Binary searchil, kui linear searchil. Binary search on kiire ka suurte andmete
+analüüsimisel.
+
+Binary search on kasulikum kui linear search olukorras kus on vaja leida näiteks
+nimekogumikust nimi, kus on 1000 nime ja see kogumik on tähestikulises järjekorras.
+Binary search peab tegema kontrollimise jaoks log2(1000) kontrolli ehk umb
+10 kontrolli. Mis on palju kiirem, kui linear search, mis peaks tegema halvimal juhul
+1000 kontrolli. 

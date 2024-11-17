@@ -1,0 +1,59 @@
+1. 
+Jump search algoritm on algoritm, mida kasutatakse sorteeritud massiivides.
+See töötab nii, et see algoritm "hüppab üle" mingitest elementidest ning see
+kui palju ta üle hüppab on kindel number. Kui jump search on hüpanud üle otsitavast
+elemendist, siis ta läheb sama palju tagasi ning otsib edasi linear searchiga. 
+
+Põhiprintsiibid:
+Töötab sorteeritud massiivis
+Hüppamispikkuse optimaalne suurus on (? n). Ajakompleksus on Jump searchil O(?n).
+Kui otsinguala on väiksem, tehakse linear searchi.
+Hüppe pikkus on ruutjuur n
+
+Pseudokood:
+
+JumpSearch (x, z, m):
+	Sisend:
+		x = Sorteeritud andmed
+		z = otsitav element
+		m = hüppe pikkus 
+	Väljund: 
+		Kui z on x´is tagastatakse selle indeks. Kui ei ole siis "numbrit ei leitud"
+		
+	vasak <- x.head
+	parem <- liigu m sammu võrra edasi vasakult, kuni jõuad m-ndale elemendile.
+	
+	while parem != NULL and not (vasak.key <= z < parem.key):
+		vasak <- parem.next
+		parem <- liigu m sammu edasi
+		
+		Kontrolli kas jõudsime massiivi lõppu
+	if parem = NULL:
+		return "numbrit ei leitud"
+		
+		Otsi linear searchiga vasakult paremale
+		
+	else:
+		while vasak != parem.next and vasak.key != z:
+			vasak <- vasak.next
+			
+		if vasak = parem.next:
+			return "ei leitud"
+		else:
+			return vasak.item
+
+
+2. 			
+Võrdlus Linear searchi ja Binary searchi ajalsie kompleksusega
+Jump search: Peab olema sorteeritud massiiv, kasulik, kui tahame kiirendada lineaarotsingut,
+Parim juhtum O(1), keskmine ja halvim juhtum O(sqrt n)
+
+Binary search: Sobib suurte sorteeritud andmete puhul, parim juhtum O(1), keskmine ja halvim O(log n)
+
+Linear search: Ei pea olema sorteeritud kuid sobib ainult väikestele massiividele.
+Parim juhtum O(1), keskmine ja halvim O(n).
+
+3.
+Jump search võib olla efektiivsem, kui linear search ja binary search nt siis, kui
+tegemist on väga suure massiiviga, kus otsitav väärtus on esimeses pooles.
+Jump search piirab kiirelt otsinguala.

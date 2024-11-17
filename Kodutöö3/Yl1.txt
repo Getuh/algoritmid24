@@ -1,0 +1,7 @@
+Linear search algoritmi saab kasutada reaalmaailma rakendustes, kus andmed ei ole
+sorteeritud. See on kiire ja lihtne ning saab kasutada väikestes andmekogudes.
+Näiteks kontaktide otsimine telefonis.
+
+Piirangud: 
+Suurte andmemahtudega on väga aeglane.
+Ei sobi suurtele massiividele
