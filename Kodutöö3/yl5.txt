@@ -1,0 +1,5 @@
+5. Toote otsimine veebipoest
+
+Sobiks binary search, kuna see töötab hästi järjestatud andmetega (hinnad, nimed) ning otsimine on kiire ka suurte andmehulkadega.
+Modifikatsioonideks saaks olla nt indeksid otsinguparameetrite järgi (hind, mark)
+Samuti saab lisada juurde filtreerimise (hinnavahemik binary searchiga ja siis filtreeritakse)

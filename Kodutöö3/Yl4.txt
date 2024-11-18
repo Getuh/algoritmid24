@@ -1,0 +1,35 @@
+1. Ternary search on sarnane Binary searchiga aga see jagab massiivi kolmeks võrdseks osaks.
+Leiab keskkohad arvutusega: 
+mid1 = vasak + (parem-vasak) / 3
+mid2 = parem - (parem - vasak) / 3
+Kui otsitav element on väiksem kui mid1 siis väärtus asub vasakpoolses alas
+Kui otsitav element on suurem kui mid2 siis see asub parempoolses alas
+Kui otsitav element on mid1 ja mid2 vahemikus siis otsitav väärtus on keskosa piirkonnas.
+
+funktsioon ternary_search (massiiv, vasak, parem, element):
+	mid1 = vasak + (parem-vasak) / 3
+	mid2 = parem - (parem - vasak) / 3
+	
+	kui massiiv[mid1] == element:
+		tagastab mid1
+	kui massiiv[mid2] == element:
+		tagastab mid2
+		
+	kui element on väiksem massiiv[mid1]:
+		parem = mid1 - 1
+	
+	elif element on suurem massiiv[mid2]:
+		vasak = mid2 + 1
+		
+	else:
+		vasak = mid1 + 1
+		parem = mid2 - 1
+		
+	tagasta -1 kui ei leitud elementi
+	
+2. Ternary searchi ja binary searchi ajakompleksuse võrdlus
+Binary searchi ajakompleksus on O(log2(n)) kuid Ternary searchil on O(log3(n)).
+
+3. Binary search on üldiselt tõhusam kui ternary search, kuna log2(n) < log3(n).
+Binary searchil on vaja teha ainult üks keskpunkti arvutus igal sammul kuid ternary searchil on vaja teha 
+kaks keskpunkti arvutust igal sammul. 
