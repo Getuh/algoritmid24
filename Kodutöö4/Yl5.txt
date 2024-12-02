@@ -1,0 +1,17 @@
+1. Kuidas aitab ületada ühekordse räsimise piiranguid: 
+	- Clusteringu vältimine
+	- Parem hajutus
+	- Otsingusamm arvutatakse igal põrkel uus
+	
+2. Ajaline keerukus parimal juhtumil on O(1) (Kui kokkupõrkeid ei esine)
+Halvimal juhul (väga palju kokkupõrkeid) on ajaline keerukus O(n).
+Ruumiline keerukus on O(n) kuna andmed on räsitabelis, mille suurus on määratud.
+
+3. Double hashing on väga efektiivne näiteks suurte andmebaaside päringute ja sisestustega. (nt veebirakendus, kus vaja salvestada
+tohutus koguses kasutajate andmeid)
+
+	- Kuna on väga palju kasutajaid ja pidevalt tehakse uusi kasutajaid siis kasutajate arv suureneb ja tuleb olla kindel
+	et kasutaja sisestamine ei põhjustaks kokkujooksmist või suurt viivitust.
+	- Tabel peab suutma täita väga palju andmeid kuna pidevalt tulevad uued andmed ja vanu pole vaja palju eemaldada.
+	- Kui kasutajad kasutavad otsimist, siis peab olema see kiire ja süsteem ei tohi joosta kokku.
+	- Iga otsing ja sisestamine peab olema kiire ja tõhus, et ei tekiks jamasi ka põrgete ajal.

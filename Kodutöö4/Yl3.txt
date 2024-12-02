@@ -1,0 +1,18 @@
+2. Separate chaining vs open addressing ajakompleksus
+
+Mõlema ajakompleksus on O(n) kuid kokkupõrke korral on Separate chainingu ajakompleksus aeglane.
+Ruumilise kompleksuse mõttes on open addressingul probleem siis, kui on väga kõrge täitumine, mis teeb funktsiooni aeglaseks.
+Kuid Separate chainingul Linkedlist lisab ruumikulu.
+
+3. Plussid miinused Separate chainingul:
+
+	PLUSSID
+	- Lihtne rakendada
+	- Toimib hästi ka kui räsitabel on suure täitumisastmega
+	- Ei ole vaja ümberpaigutusi, kui on kokkupõrge.
+	- Saab salevastada keerukaid või dünaamilise suurusega andmeid.
+	
+	MIINUSED
+	- Iga põrke korral lisandub linkedlisti jaoks täiendav mälu
+	- Kui räsitabel tuleb pikk võib ajakompleksus minna O(n)
+	- Ruumi raisatakse kuna mingeid hash tabeli kohti ei kasutata

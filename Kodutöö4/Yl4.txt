@@ -1,0 +1,15 @@
+1. Kui toimub põrge, siis otsib open addressing järgmisi tühje kohti tabelis, kuni leitakse üks kuhu salvestada väärtused.
+Tabeli täitumine ja otsingud toimuvad tabelis.
+
+2. LINEAR PROBING - Kui on põrge siis liigutakse tabelis järgmisse kohta, kuni leitakse vaba koht. Lihtne rakendada
+ja efektiivne madalal täitumisastmel. Kui tabel on liiga täis võib tekkida clustering, mis aeglustab otsimist.
+
+QUADRATIC PROBING - Liigutakse tabelis nii, et iga number läheb ruutu. Väldib lineaarset clusteringi. Kui täitumisaste
+on liiga suur ei pruugi leida vaba kohta.
+
+DOUBLE HASHING - Kasutatakse kahte erinevat räsifunktsiooni, et otsida vaba kohta (yldiselt index + i x h2(k). Väldib
+igasugust clusteringu ja annab hea hajutuse. Räsifunktsioonide valimine peab olema õige, et ei tekiks tsükklit.
+
+3. Linear probing sobib hästi, kui räsitabel on väike või keskmine.
+Quadratic probing - Sobib hästi kui räsitabel on suurem, kuna selline otsimine aitab vältida clustereid + parem hajuvus.
+Double hashing - Kui on vaja tagada efektiivne põrgete lahendamine isegi kui on tegu suure räsitabeliga.

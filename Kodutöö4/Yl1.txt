@@ -1,0 +1,20 @@
+1. Räsimise abil saab teisendada kindlaksmääratud pikkusega andmed unikaalseks koodiks ehk hash value'ks või hash code'iks.
+Räsimise idee on teha Võti-väärtus paarid, ehk andmed salvestatakse võti-väärtus paaridena ja võtmele 
+rakendatakse räsifunktsioon. Samuti andmestruktuur, mida kasutatakse räsimise rakendamiseks salvestab need paarid ning räsi
+väärtust kasutatakse andmete salvestamise indeksina.
+
+2. Hea räsifunktsiooni omadused:
+	- Peab sama sisendi korral tagastama sama räsi väärtuse
+	- Peab erinevate sisendite puhul genereerima erinevaid räsi väärtusi
+	- Peab räsi väärtusi ühtlaselt räsitabelis jaotama.
+	
+3. Kokkupõrge tekib siis, kui kaks võtit genereerivad sama räsi väärtuse. Kokkupõrke lahendamiseks on kolm tehnikat:
+	- Avatud aadressimine (Open addressing)
+	- Lineaarne proovimine (Linear Probing)
+	- Kvadratiline proovimine (Quadratic Probing)
+	- Kahekordne räsimine (Double Hashing)
+	- Separate Chaining
+	
+Separate Chaining - Kui mitu elementi saavad sama räsiväärtuse, siis hoitakse neid LinkedListis.
+Open Addressing - Kõik elemendid on salvestatud räsitabelisse aga kui kokkupõrge toimub, siis otsitakse uus vaba koht
+kuhu väärtus salvestada.
