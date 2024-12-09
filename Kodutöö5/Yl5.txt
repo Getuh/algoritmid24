@@ -1,0 +1,28 @@
+1. AVL- puu on tasakaalustatud binaarne andmestruktuur, mille iga sõlme kõrgus on kindel ning selle tasakaalustamiseks kasutatakse
+balance factorit, mis on vasaku ja parema alampuu kõrguste vahe.
+
+Omadused:
+-Iga sõlme balance factor on vahemikus -1 - 1.
+-Kui balance factor ei ole selles vahemikus siis kasutatakse rotatsioone.
+- Puu kõrgus on alati O(log n)
+-Iga lisamise ja kustutamise järel arvutatakse mõjutatud sõlmede balance factor.
+- Otsimine. lisamine ja kustutamine on kõik O(log n) 
+
+2. AVL-puu:
+- Kõrgus rangelt tasakaalustatud
+- Tasakaalustamine sagedasem
+- Otsimine kiirem sest kindlasti tasakaalus
+- Lisamisel ja kustutamisel rohkem rotatsioone 
+- Rakendamine keeruline sest tasakaalureeglid crazy karmid.
+
+Punane-must puu
+
+-Pole nii kindlasti tasakaalustatud ja kõrgus O(log n)
+- Tasakaalustamine pole nii vajalik sest reeglid pole nii crazy karmid.
+- Otsimine veidi aeglasem, kuna kõrgus võub suurem olla
+- Lisamisel ja kustutamisel vähem rotatsiooooone. (ma ei jõua enam kirjutada ja ma isegi ei tea, kas sa päriselt loed neid läbi niiet atp ma panen siia tsihukest mitteilusat kirjavigadega teksti sest noooomai jõua enam sryyyyyyy:3)
+- Rakendada lihtsam ja hallata ka.
+
+3. AVL-puu - nt andmebaasid või sõnastikud kuna otsingud on sagedased ja olulised ja otsing on kiire.
+Punane-must puu kui on nt operatsioonisysteemide protsesside haldamine sest seda hea kasutada kui on vaja lihtsat kasutust
+ja stabiilset jõudlust suures ulatuses.

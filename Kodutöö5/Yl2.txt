@@ -1,0 +1,30 @@
+1.
+Min-Heap:
+	- Juure sõlmest olev key peab olema väiksem või võrdne kõigi selle laste sõlmedes olevate keydega.
+	- Juure sõlmes on kõige väiksem key
+	- Kasvav prioriteet
+	- Konstrueerimisel on prioriteet kõige väiksemal elemendil
+	- Kõige väiksem element on esimene, mis eemaldatakse kuhjast.
+	
+Max-Heap:
+	- Juure sõlmest olev võti peab olema suurem või võrdne kõigi selle laste sõlmedes olevate keydega
+	- Juure sõlmes on kõige suurem key
+	- Kahanev prioriteet
+	- Konstrueerimisel kõige suurem element prioriteet
+	- Kõige suurem element esimene, mis kuhjast eemaldatakse
+	
+2.
+	- Uue elemendi lisamine kuhja ehk uus element lisatakse kuhja lõppu ning seejärel liigutakse üles poole kuni kuhiomadus taastatakse.
+	Ajakompleksus O(log n) kuna halvimal juhul tuleb liikuda puu tippu.
+	- Otsimine ehk elemendi leidmine on O(1), kuna see on kergesti kättesaadav.
+	- emaldamine ehk juure eemaldamine, kus juure asemele viiakse viimane element, seejärel liigutakse allapoole kuni 
+	kuhiomadus taastatakse. Ajakompleksus O(log n)
+	- Construction ehk andmestiku teisendamine kuhjaks - O(n) kuna ehitamine vajab vähem kui O(n log n) operatsioone.
+	
+	Ruumikompleksus on O(n).
+	
+3. 
+Kuhja omadused aitavad kergesti lisada, eemaldada ja otsida erinevaid elemente. Ning andmete sorteerimisel
+on hea kasutada HeapSort algoritmi, kuna sellel pole vaja lisamälu ja sellel on hea ajakompleksus.
+ Prioriteetjärjekorras kuhi tagab kiire juurdepääsu kõrgeima prioriteediga elementidele ja on väga vajalik
+ algoritmides, kus prioriteet on oluline.

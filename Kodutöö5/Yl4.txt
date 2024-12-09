@@ -1,0 +1,30 @@
+1. Punase-musta puu algoritm on tasakaalustatud BST millel on efektiivne jõudlus ja hoiab kõrguse umb O(log n). Kasutatakse
+punast või musta ja reegleid, mis piiravad puu strutktuuri.
+
+Omadused: 
+	- Iga sõlm on kas punane v must
+	- Juursõlm alati must
+	- Kõik lehed on mustad
+	- Punase sõlme lastesõlmed on alati mustad
+	- Must kõrgus ehk igal teel juurest leheni on sama arv musti sõlmi.
+	
+2. Kõrgus:
+	- punase-musta puu: O(log n).
+	- Binaarne O(log n)
+	
+	Otsing:
+	- punase musta puu O(log n) 
+	- Binaarne O(log n)
+	
+	Lisamine:
+	-punase musta puu O(log n)
+	-Binaarne O(log n)
+	
+	Kustutamine:
+	-punase musta puu O(log n)
+	-Binaarne O(log n)
+	
+3. Punase- musta puu tasakaalustamine ja värvireeglid hoiavad puu kõrguse väiksena ja operatisioonid O(log n) ajakompleksusega.
+Puu jääb alati tasakaalustatud.
+Värvireeglid teevad nii, et kõrgus jaotuks ühtlaseks sellega, et punased sõlmed ei ole järjestikku ja igas teekonnas on sama
+arv musti sõlmi

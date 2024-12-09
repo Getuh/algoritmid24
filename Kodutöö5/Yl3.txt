@@ -1,0 +1,24 @@
+1. Andmestruktuur, mis teeb nii, et igal sõlmel on maksimaalselt kaks alamsõlme ning järgib teatud omadusi:
+	- Vasak: Kõik sõlmed sisaldavad väärtusi, mis on väiksemad kui juursõlm.
+	- Parem: Kõik sõlmed sisaldavad väärtusi, mis on suuremad kui juursõlm.
+	- Ei luba duplikaate
+	- Hierarhiliselt organiseeritud.
+	
+	Põhielemendid:
+		- Node (iga node sisaldab):
+			- Key - Andmeid esindav väärtus
+			- Left child - Väiksem väärtus
+			- Right child - suurem väärtus
+		- Root - Ülemine node kus kõik algab
+		- leaf - Node millel pole alamsõlmi
+		- Parent - Iga node millel on vähemalt üks alamsõlm
+		- Height - Max kaugus rootist leafini
+		
+2. Kui BST muutub tasakaalustamata siis siis jõudlus muutub halvemaks kuna kõik operatsioonid peavad läbima terve puu.
+Ning ruum on ebaefektiivne kuna puu kõrgus kasvab andmete arvuga lineaarselt.
+Samuti tasakaalustamata puu ei pruugi andmeid korrektselt jaotada mis võib põhjustada ebaühtlast jõudlust rakendustes.
+
+Saab optimeerida nt:
+kasutades AVL-puud või punane-must puud. Säilitatakse puu kõrgus umb log n ja see tagab et kõik operatsioonid jäävad efektiivseks.
+Kui sisendandmed on etteteada, siis saab need enne sorteerida ja tasakaalustada, et oleks norm kõrgus.
+Tasakaalu parandamiseks saab teha nt vasak- või parempoolseid rotatsioone.
