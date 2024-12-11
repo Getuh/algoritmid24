@@ -2,24 +2,24 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 
 letters = "abcdefghijklmnopqrsšzžtuvwõäöüxy"
-num_letters = len(letters)
+num_letters = len(letters) #tähestiku pikkus
 
-def encrypt(plaintext, key):
-    ciphertext = ""
+def encrypt(plaintext, key): #krüpteerib teksti lisades "nihke" ehk key
+    ciphertext = "" #tulemus
     for letter in plaintext:
-        letter = letter.lower()
+        letter = letter.lower() #täht väiketäheks
         if letter == " ":
-            ciphertext += " "
+            ciphertext += " " #tühik
         else:
-            index = letters.find(letter)
-            if index == -1:
+            index = letters.find(letter) #leiab tähe
+            if index == -1: #kui ei kuulu tähestikku
                 ciphertext += letter
             else:
-                new_index = (index + key) % num_letters
-                ciphertext += letters[new_index]
+                new_index = (index + key) % num_letters #nihutab õige arvu 
+                ciphertext += letters[new_index] 
     return ciphertext
 
-def decrypt(ciphertext, key):
+def decrypt(ciphertext, key): #dekrüpteerib teksti 
     plaintext = ""
     for letter in ciphertext:
         letter = letter.lower()
@@ -30,31 +30,31 @@ def decrypt(ciphertext, key):
             if index == -1:
                 plaintext += letter
             else:
-                new_index = (index - key) % num_letters
+                new_index = (index - key) % num_letters #nihutab teksti tagasi
                 plaintext += letters[new_index]
     return plaintext
 
 def process_text():
     try:
-        text = input_text.get("1.0", "end").strip()
-        key = int(key_entry.get())
-        action = action_var.get()
+        text = input_text.get("1.0", "end").strip() #loeb sisestatud teksti
+        key = int(key_entry.get()) #võtab key
+        action = action_var.get() #kas dekrüpteerib või krüpteerib
 
-        if not (1 <= key <= num_letters):
-            messagebox.showerror("Viga", f"Nihe peab olema vahemikus 1-{num_letters}.")
+        if not (1 <= key <= num_letters): #kas on lubatud vahemikus
+            messagebox.showerror("Viga", f"Nihe peab olema vahemikus 1-{num_letters}.") #kui ei ole siis tuleb teksst
             return
         
-        if action == "Krüpteeri":
+        if action == "Krüpteeri": #tegevuse valik ja mis juhtub
             result = encrypt(text, key)
         elif action == "Dekrüpteeri":
             result = decrypt(text, key)
         else:
-            result = "Vali tegevus!"
+            result = "Vali tegevus!" #kui tegevus poel valitud aga kasutaja vajutab "töötle"
         
         output_text.delete("1.0", "end")
         output_text.insert("1.0", result)
     except ValueError:
-        messagebox.showerror("Viga", "Sisesta korrektne arv nihke jaoks!")
+        messagebox.showerror("Viga", "Sisesta korrektne arv nihke jaoks!") #kui key pole antud vahemikus
 
 
 root = tk.Tk()
