@@ -1,0 +1,13 @@
+Dijkstra algoritm leiab lühima tee graafis.
+Töötab nii, et:
+	- Määrab lähtetipu kauguseks 0 ja kõik teised lõpmatuks
+	- Valib iga kord lähima tipu ning uuendab teiste kaugusi sellest
+	- Kordab kuni kõikidel tippudel on kaugus
+	
+Saab kasutada:
+	- GPS
+	- Võrguliiklus
+	
+Ebaefektiivne on:
+	- Hõredad graafid
+	- Liiga tihedad graafid

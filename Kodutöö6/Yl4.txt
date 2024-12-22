@@ -1,0 +1,12 @@
+Bellman-Fordi algoritm leiab lühima tee, kuid lubab ka negatiivsed servad.
+
+	- Kõikidel graafi servadel uuendatakse kaugusi kuni V-1 korda. (V = tippude arv)
+	- Negatiivseid tsükleid tuvastatakse kui pärast V-1 leidub serv, mida saab veel uuendada.
+	
+Erinevused Dijkstra algoritmist: 
+
+	- Negatiivsed servad on ok
+	- Aeglasem dijkstraga
+	- Tötab kõigi servadega kordamööda aga dijkstra kasutab iga kord lähimat uuendamata tippu.
+	
+Praktiliselt saab kasutada finantsanalüüsis ja vigade kontrollis näiteks.

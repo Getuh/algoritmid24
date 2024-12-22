@@ -1,0 +1,10 @@
+Graafide värvimise probleem on see, et üksteisega ühendatud tipud ei jagaks sama värvi, sest vaja kasutada võimalikult vähe värve.
+
+Arvutiteaduses on graafi minimaalsete värvide arvu leidmine NP-probleem, mis teeb selle teoreetiliselt oluliseks
+Praktikas saab lahendada mitmeid optimeerimisprobleeme nt ressursijaotus või konflitkide vältimine.
+
+Ressursside jaotamisel saab kasutada sedea nt nii, et kui on eksamiperiood, ss eksamigraafiku loomisel on graafi tipud eksamid
+ja õpilased servad, kes osalevad mõlemal eksamil. Värvid saab panna nii, et samal ajal olevaid eksameid ei oleks.
+
+Konfliktide jaotamisel on nt nii, et saab jaotada raadiosagedusi tugijaamade vahel vältides häireid. Tugijaamad = Tipud
+Sagedused = värvid
